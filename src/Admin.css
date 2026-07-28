@@ -1,0 +1,97 @@
+.admin {
+  min-height: 100vh;
+  padding: 30px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at top, #292929 0%, #0b0b0b 38%),
+    #070707;
+}
+
+.admin-login {
+  width: min(440px, 100%);
+  padding: 48px;
+  border: 1px solid #4b4b4b;
+  background: rgba(12, 12, 12, 0.92);
+  box-shadow:
+    0 25px 80px rgba(0, 0, 0, 0.7),
+    inset 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.admin-etiqueta {
+  color: #909090;
+  font-size: 0.7rem;
+  letter-spacing: 4px;
+}
+
+.admin-login h1 {
+  margin: 12px 0;
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+}
+
+.admin-login p {
+  margin-bottom: 32px;
+  color: #999;
+  line-height: 1.6;
+}
+
+.admin-login form {
+  display: grid;
+  gap: 20px;
+}
+
+.admin-login label {
+  display: grid;
+  gap: 9px;
+  color: #c8c8c8;
+  font-size: 0.82rem;
+}
+
+.admin-login input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #424242;
+  outline: none;
+  color: white;
+  background: #0b0b0b;
+  font: inherit;
+  transition: 0.25s;
+}
+
+.admin-login input:focus {
+  border-color: #c8c8c8;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.08);
+}
+
+.admin-login button {
+  margin-top: 8px;
+  padding: 14px;
+  border: 1px solid #c3c3c3;
+  color: #080808;
+  background: linear-gradient(135deg, #fff, #898989);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-login > a {
+  margin-top: 28px;
+  display: inline-block;
+  color: #999;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.admin-login > a:hover {
+  color: white;
+}
+
+@media (max-width: 550px) {
+  .admin {
+    padding: 18px;
+  }
+
+  .admin-login {
+    padding: 32px 24px;
+  }
+}
